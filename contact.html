@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/43124feaf5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <img src="../images/logo.png" alt="logo" class="logo" />
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/shop.html">Shop</a></li>
+        <li><a href="../pages/events.html">Events</a></li>
+        <li><a href="../pages/contact.html" class="active">Contact</a></li>
+        <li>
+          <a href="https://www.romancart.com/cart.asp"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- <form onsubmit="sendEmail(); resert(); return false;" > -->
+      <form action="" class="contact">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea
+          name="Message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+          Email.send({
+      Host : "smtp.gmail.com",
+      Username : "mihaeladarii5@gmail.com",
+      Password : "moldova2015",
+      To : 'robinmihaeladarii@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact Form Enquiry",
+      Body : "Name" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> Phone no.:" + document.getElementById("phone").value
+            + "<br> Message:" + document.getElementById("message").value
+  }).then( 
+    message => alert("Message Sent Successfully")
+  );
+    }
+  </script> -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.6054292185963!2d-97.30201904891427!3d32.66994258091124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e6fcf2e644f15%3A0x2d68743ce790701c!2sCarter%20Angelo!5e0!3m2!1sen!2suk!4v1679170063452!5m2!1sen!2suk"
+        width="480"
+        height="570"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </body>
+</html>

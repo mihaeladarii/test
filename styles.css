@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; 
+font-family: 'Beth Ellen', cursive;*/
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+div{
+  display: inline-block;
+}
+
+body{
+  font-family:  'Josefin Sans', sans-serif;
+  background-color: #fbf7f5;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav{
+  background-color: #fbf7f5;
+  height: 100px;
+  max-width: 1000px;
+  
+}
+
+.logo{
+  width: 100px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+  margin-top: 14px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: #003CEF;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  background: #FD93C4;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 40px;
+  color: #003CEF;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  margin-top: 14px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+
+
+.images{
+  width: 800px;
+  height: 500px;
+}
+
+.slideshow{
+  margin-left: 10%;
+}
+
+
+
+
+
+
+
+#old{
+  text-align: center;
+  align-items: center;
+} 
+
+ #cart{
+  padding-top: 20px;
+  width: 500px;
+  display: inline-block;
+}
+#cart img{
+  width: 500px;
+}
+
+#gal{
+width: 500px;
+
+
+}
+#gal img{
+  width: 500px;
+} 
+
+
+
+
+.container{
+  background: #fff;
+  display: inline-block;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+form h3{
+  color:#003CEF;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  border: 0;
+  margin: 10px;
+  padding: 20px;
+  outline:none;
+  background: #f5f5f5;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+form button{
+  padding: 15px;
+  background: #FD93C4;
+  color:#fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 20px;
+}
+
+.map{
+display: inline-block;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+
+
+.event1, .event2, .event3{
+  width: 600px;
+  margin: 10px;
+}
+.event1img{
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+
+
+.shop{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: center;
+  background: #fff;
+  display: inline-block;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 480px;
+  border-radius: 10px;
+}
+
+
+.cart-btn{
+  cursor: pointer;
+}
+
+#painting1{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+@media (max-width: 952px){
+  nav.logo{
+    width: 50px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 25px;
+  }
+  .container{
+    display: grid; 
+    justify-content: center;
+  
+  }
+  
+    .map{
+      float: none;
+      margin: auto;
+      padding-top: 20px;
+      display: grid; 
+    justify-content: center;
+    }
+
+    .event1, .event2, .event3{
+      padding-left: 10px;
+    }
+
+
+    .shop{
+  
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    } 
+    #painting1{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background-image: url(../images/hamtap.png) ;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 176, 222, 0.3);
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height:30px ; 
+ }
+  nav ul li a{
+    font-size: 25px;
+    font-weight: 800;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #FD93C4;
+  }
+  
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #cart{
+    width:500px;
+    float:none;
+  }
+
+  #gal{
+    grid-row: 2;
+  }
+
+.container{
+  display: grid; 
+  justify-content: center;
+
+}
+
+  .map{
+    float: none;
+    margin: auto;
+    padding-top: 20px;
+    
+  }
+
+  .events{
+    text-align: center;
+    align-items: center;
+  }
+
+  .event1, .event2, .event3{
+    padding: 10px;
+    width: 500px;
+    display: grid;
+    justify-content: center;
+     
+  }
+
+  .event1img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .event1h{
+    padding-top: 0;
+    text-align: center;
+  }
+  .event1btn{
+    width: 130px;
+    
+  }
+
+  .grid.events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .shop{
+  
+    display: block;
+margin-left: auto;
+margin-right: auto;
+  } 
+  #painting1{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+  }
+}
+
+
+
+
+
